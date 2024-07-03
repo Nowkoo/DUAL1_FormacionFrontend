@@ -1,0 +1,54 @@
+#target {
+    text-align: center;
+    background-color: yellow;
+}
+
+#target {
+    text-align: center;
+    background-color: red;
+}
+/*Si hay empate, se ejecuta la última en llegar (no debería haberlo)*/
+
+#enlace:hover {
+    color: green;
+}
+
+/*Aplica este estilo a todos los elementos por encima de los que ya hubiera*/
+* {
+    /*Puedo aplicar varias características separándolas por espacio en blanco*/
+    /*em es tamaño relativo. 1em es el tamaño por defecto del elemento. Aquí lo estamos dividiendo por 1.3*/
+    /*También existe rem, que es relativo al tamaño del último elemento padre que ha cambiado de tamaño */
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #555;
+}
+
+/*Se aplica a todos los p dentro de #primero*/
+#primero p {
+    color: #336699; margin-left: 1em; padding: 0.3em 0em;
+}
+
+/*Se aplica a todos los elementos em que sean de la clase especial*/
+em.especial {
+    border: 1px solid orange; padding: .1em
+}
+
+/*Se aplica a todos los elementos span contenidos en un elemento de clase normal*/
+.normal span {
+    font-weight: bold;
+}
+
+/* SELECTORES
+Selector universal: * {}
+Selectores de tipo: p {}
+Selector de tipo perteneciente a un atributo en concreto: p[name="parrafo-rojo"] {}
+Selector de clase .red {}
+Selector de id #nombre_id {}
+Combinaciones como: p.red {} (de todos los elementos pertenecientes a la clase .red, se aplicaría solo a los párrafos)
+Dar formato a varios tipos de elementos a la vez separándolos con comas como: p, a {}
+Dar formato a varios tipos de elementos que estén dentro de la misma jerarquía (que tengan el mismo padre, es decir, sean hermanos): span + a {}
+Pseudoselectores para ciertos estados de los elementos como :hover. Pueden combinarse también #enlace:hover (el elemento con id enlace se pondrá 
+verde cuadno pasemos por encima del mismo)
+*/

@@ -1,0 +1,25 @@
+#contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    margin: 0.3em;
+    display: flex;
+    width: 10em;
+    height: 10em;
+    background-color: coral;
+    flex-direction: row;
+}
+
+.box_number {
+    margin: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*flexbox: 
+https://flexbox.malven.co/
+https://flexboxfroggy.com/#es
+*/

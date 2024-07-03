@@ -1,0 +1,16 @@
+div {
+    width: 10em;
+    height: 10em;
+    background-color: orange;
+    position: relative;
+}
+
+.box_number {
+    margin:0;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}

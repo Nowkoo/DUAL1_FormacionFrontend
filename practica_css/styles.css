@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    background-color: rgb(255, 119, 0);
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    width: 100em;
+    color: rgb(255, 119, 0);
+}
+
+a {
+    color: rgb(255, 119, 0);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-flow: wrap column;
+    align-content: space-between;
+    height: 15em;
+}
+
+.titulo {
+    display: inline;
+}
+
+.autor {
+    display: inline;
+}
+
+.sinopsis {
+    
+}
+
+.col1 {
+    width: 10em;
+}
+
+#contenido_central {
+    display: flex;
+}
+
+#contenido_resenyas {
+    display: flex;
+    flex-flow: column;
+}
