@@ -4,10 +4,6 @@ header {
     justify-content: center;
 }
 
-body {
-    display: ;
-}
-
 nav {
     display: block;
     position: relative;
@@ -21,6 +17,10 @@ a {
 }
 
 h2 {
+    position: relative;
+    font-size: 200%;
+    margin-left: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }

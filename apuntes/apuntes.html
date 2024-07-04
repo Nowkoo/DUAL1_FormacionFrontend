@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        Necesario para que una página sea responsive
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="apuntes.css">
+        async es necesario para que se cargue antes el dom que el script
+        <script src="apuntes.js" async></script>
     </head>
     <body>
         ol>li*6
@@ -34,11 +37,11 @@
 
         <p>
             <label for="name">Name: </label>
-            <input type="text" id="name">
+            <input type="text" id="name2">
         </p>
         <p>
             <label for="surname">Surname: </label>
-            <input type="text" id="surname">
+            <input type="text" id="surname2">
         </p>
         <p>
             <input type="checkbox" id="elemento1" name="aficiones"><label for="elemento1">Elemento 1</label>
@@ -63,5 +66,13 @@
             </select>
         </p>
         </form>
+
+        <h1>DOM</h1>
+            <p class="parrafo">hola</p>
+            <p id="parrafoEspecial">adiós</p>
+            <p id="parrafo_boton"><button id="pulsa">Pulsa!</button></p>
+
+            <p id=""><button id="yellow">Amarillo!</button></p>
+            <p id=""><button id="green">Verde!</button></p>
     </body>
 </html>

@@ -40,6 +40,14 @@ em.especial {
     font-weight: bold;
 }
 
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
 /* SELECTORES
 Selector universal: * {}
 Selectores de tipo: p {}
@@ -52,3 +60,15 @@ Dar formato a varios tipos de elementos que estén dentro de la misma jerarquía
 Pseudoselectores para ciertos estados de los elementos como :hover. Pueden combinarse también #enlace:hover (el elemento con id enlace se pondrá 
 verde cuadno pasemos por encima del mismo)
 */
+
+/* ETIQUETAS MEDIA (para webs responsive)
+La columna se ajusta al 100% de la pantalla, pero si la pantalla tiene menos de 600px ocupará en su lugar un 50%*/
+.column {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .column {
+        width: 50%;
+    }
+}
