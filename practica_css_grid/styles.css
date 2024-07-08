@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    background-color: rgb(255, 119, 0);
+    justify-content: center;
+}
+
+nav {
+    color: rgb(255, 119, 0);
+}
+
+a {
+    color: rgb(255, 119, 0);
+}
+
+h2 {
+    position: relative;
+    font-size: 250%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 20%  auto;
+    grid-template-rows: auto;
+    grid-gap: 5px, 5px;
+}
+
+#contenido_central {
+    display: grid;
+    grid-template-columns: 15%  auto;
+    grid-template-rows: 20% auto;
+    grid-gap: 5px, 5px;
+}
+
+#contenido_resenyas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% auto;
+    grid-gap: 5px, 5px;
+    display: block;
+}
+
+#columna_izquierda {
+    display: grid;
+    justify-items: center;
+}
