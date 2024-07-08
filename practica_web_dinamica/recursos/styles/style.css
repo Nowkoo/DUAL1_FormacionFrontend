@@ -14,7 +14,7 @@
   /* etiqueta producto */
 .tag {
     font-size: 0.9rem;
-    background-color: black;
+    background-color: gray;
     border-radius: 5px;
     width: 4rem;
     display: flex;
