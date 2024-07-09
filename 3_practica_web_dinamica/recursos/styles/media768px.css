@@ -1,9 +1,15 @@
-* {
+@media (min-width: 768px) {
+  * {
     font-family: "Poppins", sans-serif;
+  }
+
+  span {
+    font-size: 1.2rem;
   }
   
   body {
-    height: 100vh;
+    height: 95vh;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +30,8 @@
   
   /* producto*/
   .product-title {
-    font-size: 2rem;
+    position: relative;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   
@@ -32,9 +39,10 @@
     background: #fff;
     display: grid;
     grid-template-rows: 55% 45%;
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 70%;
     box-shadow: 10px 10px 25px 0px #3c3c3c;
+    size: 200%;
   }
   
   .product-image {
@@ -43,7 +51,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 10px;
-    width: 28rem;
+    width: 43rem;
     height: 66%;
   }
   
@@ -144,3 +152,4 @@ button {
     border: none;
     border-radius: 5px;
   }
+}

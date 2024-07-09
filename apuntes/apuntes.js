@@ -37,3 +37,47 @@ document.querySelectorAll("button").forEach((element)=>{
         document.querySelector("p").setAttribute("class", `pulsa ${e.target.getAttribute("id")}`)
     })
 });
+
+/*VALIDACIONES
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation*/
+document.querySelector("#name").addEventListener("input", (event) => {
+    if (event.target.validity.patternMismatch) {
+        event.target.setCustomValidity("No has escrito tu nombre");
+    } else {
+        event.target.setCustomValidity("");
+    }
+})
+
+/*Para detener el envio de un formulario*/
+document.querySelector("#miform").addEventListener("submit", (event)=> {
+    event.preventDefault();
+})
+
+let invalidLengthMessage = document.createElement("p");
+invalidLengthMessage.setAttribute("id", "lengthMessage");
+let invalidLengthMessageText = document.createTextNode("El mensaje tiene un tamaño máximo de 9 caracteres.");
+invalidLengthMessage.appendChild(invalidLengthMessageText);
+
+let invalidPatternMessage = document.createElement("p");
+invalidPatternMessage.setAttribute("id", "patternMessage");
+let invalidPatternMessageText = document.createTextNode("El mensaje no sigue un patrón válido.");
+invalidPatternMessage.appendChild(invalidPatternMessageText);
+
+const inputNombre = document.querySelector("#name2");
+
+inputNombre.addEventListener("input", (event)=> {
+    let lengthMessageError, patternMessageError;
+    if (event.target.value.length > 9) {
+        event.target.insertAdjacentElement("afterend", invalidLengthMessage);
+    } else {
+        lengthMessageError = document.querySelector("#lengthMessage");
+        if (lengthMessageError) lengthMessageError.remove();
+    }
+
+    if (event.target.validity.patternMismatch) {
+        event.target.insertAdjacentElement("afterend", invalidPatternMessage);
+    } else {
+        patternMessageError = document.querySelector("#patternMessage");
+        if (patternMessageError) patternMessageError.remove();
+    }
+})
